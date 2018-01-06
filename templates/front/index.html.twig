@@ -1,0 +1,14 @@
+{% extends 'front/base.html.twig' %}
+
+{% block body %}
+    <h1 class="my-4 text-center text-lg-left">Playlist</h1>
+    <div class="row text-center text-lg-left">
+        {% for video in videos %}
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="{{ path('view_video', {'code': video.code}) }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ video.thumbnail }}" alt="">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
