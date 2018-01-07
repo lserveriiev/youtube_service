@@ -20,7 +20,6 @@ class YoutubeService
         if (null === $this->service) {
             $this->service = new \Google_Service_YouTube($this->client);
         }
-
     }
 
     /**

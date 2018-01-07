@@ -52,7 +52,7 @@ class BackendController extends Controller
                 return $this->json(['success' => 0], Response::HTTP_BAD_REQUEST);
             }
         }
-        
+
         return $this->json(['success' => 0], Response::HTTP_BAD_REQUEST);
     }
 
